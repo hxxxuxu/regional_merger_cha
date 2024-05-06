@@ -1,10 +1,18 @@
 ##This script is to calculate the changes in each province and merge 
 ##the csv file with the gpkg file of China.
+import csv
+import pandas as pd
+import geopandas as gpd
 
 name_dict_key = ['Beijing','Tianjin','Hebei','Shanxi','Inner Mongolia','Liaoning','Jilin','Heilongjiang',
                  'Shanghai','Jiangsu','Zhejiang','Anhui','Fujian','Jiangxi','Shandong','Henan','Hubei','Hunan',
                  'Guangdong','Guangxi','Hainan','Chongqing','Sichuan','Guizhou','Yunnan','Tibet','Shaanxi',
                  'Gansu','Qinghai','Ningxia','Xinjiang']
+
+region_index = ['prefecture','prefecture','county','county','county','county','county','township','township','township','township']
+def reidx_group(df,idx_list):
+    df = df.set_index([idx_list,df.index])
+    return df
 
 #get which province or part have the most changes
 num_change = []

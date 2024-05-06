@@ -1,5 +1,5 @@
 ##This file is to analysis the trend and the number of changes in both country 
-##and each province's perspective.
+##and each province.
 ##Stay in the folder 'Annual_by_Province'.
 
 import pandas as pd
@@ -26,7 +26,7 @@ change_c['2004'] = change_c['2004'].fillna(0)
 change_c_abs['2004'] = change_c_abs['2004'].fillna(0) 
 
 
-#plot the yearly changes of each reigion level (in details) in the country.
+#plot the yearly changes of each reigion level (in detail) in the country.
 plot_data = change_c.T
 fig,ax1 = plt.subplots()
 plot_data.plot(ax=ax1)

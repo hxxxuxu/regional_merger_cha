@@ -77,7 +77,7 @@ Next, we will examine whether changes in regional divisions have contributed to 
 
 This line graph compares the number of regions with sulfur dioxide emissions from waste gases. Initially, the two trends aligned, but the slope of the changes in regional numbers was significantly steeper than that of the reduction in sulfur dioxide emissions, until marked by a red line in 2015. This year, the central government enacted a law on air pollution and allocated substantial funds and resources to address it. After this year, a sharp reduction in sulfur dioxide emissions occurred, which thereafter appeared to decouple from changes in the number of regions.
 
-![image of scatter plot](so2data/Comparison_reg_changes_so2.png)
+![image of scatter plot](so2data/scatter1.png)
 
 This scatter plot demonstrates that there is no significant linear relationship between the number of regional changes in each province and sulfur dioxide emissions. A plausible explanation for this might be that in China, controlling environmental pollution—a task that does not immediately yield economic benefits—is primarily influenced by directives from the central government, with other factors playing a secondary role.
 

@@ -64,7 +64,7 @@ plot_data = pd.DataFrame(plot_data)
 scatter = sns.relplot(data=plot_data,x='Number of regional changes',y='Percentage changes of so2 emission',kind="scatter")
 scatter.ax.axhline(0, color='black', linewidth=1, linestyle='--')  
 scatter.ax.axvline(0, color='black', linewidth=1, linestyle='--') 
-fig.savefig('scatter.png')
+fig.savefig('scatter1.png')
 
 #merge the spatial data with the percentage change in so2 emission
 so2_merge = so2_p['change'].to_frame()
